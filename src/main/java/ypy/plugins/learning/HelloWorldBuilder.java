@@ -59,6 +59,7 @@ public class HelloWorldBuilder extends Builder {
             listener.getLogger().println("Bonjour, "+name+"!");
         else
             listener.getLogger().println("Hello, "+name+"!");
+        build.addAction(new SidePanelAction(build));
         return true;
     }
 
